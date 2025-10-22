@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitstring-universe-sim"
+version = "0.1.0"
+description = "Simulation of recursively evolving bitstring universes"
+readme = "README.md"
+authors = [{name = "OpenAI Assistant"}]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Life",
+]
+
+[project.urls]
+Homepage = "https://example.com/bitstring-universe-sim"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bitstring_universe"]
